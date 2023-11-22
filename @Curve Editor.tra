@@ -62,7 +62,7 @@ else
 end
 
 
-@Type2(’†ŠÔ“_–³Ž‹)
+@Type2(Ignore midpoint)
 --twopoint
 --param:0
 local modname="curve_editor"
