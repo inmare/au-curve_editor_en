@@ -6,7 +6,7 @@
 
 #include "cve_header.hpp"
 
-#define EASING_QUICK_SETUP			"イージング設定時短プラグイン"
+#define EASING_QUICK_SETUP			"Easing setting time saving plugin"
 
 
 
