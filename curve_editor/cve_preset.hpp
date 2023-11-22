@@ -187,7 +187,7 @@ LRESULT cve::Preset<Curve_Class>::wndproc(HWND hw, UINT msg, WPARAM wparam, LPAR
 
 		::SetTextColor(bitmap_buffer.hdc_memory, g_theme[g_config.theme].preset_tx.colorref());
 
-		draw_content(col_bg, &rect_title, strcmp(name, "") == 0 ? "(–³‘è)" : name, true);
+		draw_content(col_bg, &rect_title, strcmp(name, "") == 0 ? "(untitled)" : name, true);
 
 		if (g_p_render_target != nullptr && g_p_factory != nullptr) {
 			g_p_render_target->BeginDraw();
