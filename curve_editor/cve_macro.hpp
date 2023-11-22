@@ -151,23 +151,23 @@
 //---------------------------------------------------------------------
 //		文字列
 //---------------------------------------------------------------------
-#define CVE_STR_MODE_BEZIER					"ベジェ"
-#define CVE_STR_MODE_BEZIER_MULTI			"ベジェ(複数)"
-#define CVE_STR_MODE_BEZIER_VALUE			"ベジェ(値指定)"
-#define CVE_STR_MODE_ELASTIC				"振動"
-#define CVE_STR_MODE_BOUNCE					"バウンス"
+#define CVE_STR_MODE_BEZIER					"Bezier"
+#define CVE_STR_MODE_BEZIER_MULTI			"Bezier(Multi-points)"
+#define CVE_STR_MODE_BEZIER_VALUE			"Bezier(Specify value)"
+#define CVE_STR_MODE_ELASTIC				"Vibration"
+#define CVE_STR_MODE_BOUNCE					"Bounce"
 
-#define CVE_STR_WARNING_DELETE				"編集中のカーブを初期化します。よろしいですか？"
-#define CVE_STR_WARNING_DELETE_ALL			"すべてのカーブを初期化します。よろしいですか？"
-#define CVE_STR_WARNING_RESET_CONFIGS		"すべての設定を初期化します。よろしいですか？"
-#define CVE_STR_WARNING_DATA_INVALID		"互換性のないバージョンでカーブが読み込まれたか、データが破損しています。\nすべてのカーブを初期化しますか？"
+#define CVE_STR_WARNING_DELETE				"Initializes the curve being edited. Is it OK?"
+#define CVE_STR_WARNING_DELETE_ALL			"Initialize all curves. Is it OK?"
+#define CVE_STR_WARNING_RESET_CONFIGS		"Initialize all settings. Is it OK?"
+#define CVE_STR_WARNING_DATA_INVALID		"The curve was loaded with an incompatible version or the data is corrupted. \nDo you want to initialize all curves?"
 #define CVE_STR_ABOUT						CVE_FILTER_NAME " " CVE_FILTER_VERSION "\n(" CVE_FILTER_YEAR " " CVE_FILTER_DEVELOPER ")"
-#define CVE_STR_ERROR_OUTOFRANGE			"値が範囲外です。"
-#define CVE_STR_ERROR_INPUT_INVALID			"無効な入力値です。"
-#define CVE_STR_ERROR_EXEDIT_NOT_FOUND		"拡張編集プラグイン(exedit.auf)が見つかりません。"
-#define CVE_STR_INFO_LATEST_VERSION			"お使いのバージョン (" CVE_FILTER_VERSION ") は最新です。"
-#define CVE_STR_ERROR_CONNECTION_FAILED		"接続に失敗しました。"
-#define CVE_STR_ERROR_D2D_INIT_FAILED		"Direct2Dの初期化に失敗しました。"
+#define CVE_STR_ERROR_OUTOFRANGE			"Value is out of range."
+#define CVE_STR_ERROR_INPUT_INVALID			"Invalid input value."
+#define CVE_STR_ERROR_EXEDIT_NOT_FOUND		"The Advanced editing plugin (exedit.auf) was not found."
+#define CVE_STR_INFO_LATEST_VERSION			"Your version (" CVE_FILTER_VERSION ") is the latest."
+#define CVE_STR_ERROR_CONNECTION_FAILED		"Connection failed."
+#define CVE_STR_ERROR_D2D_INIT_FAILED		"Direct2d initialization failed."
 
 
 
