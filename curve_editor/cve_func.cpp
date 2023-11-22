@@ -247,7 +247,7 @@ void cve::apply_config_to_menu(HMENU menu, MENUITEMINFO* mi) {
 
 	//プラグイン名の反映
 	mi->fMask = MIIM_TYPE;
-	mi->dwTypeData = CVE_FILTER_NAME "について";
+	mi->dwTypeData = "About" CVE_FILTER_NAME;
 	SetMenuItemInfo(menu, ID_MENU_ABOUT, FALSE, mi);
 }
 
@@ -483,7 +483,7 @@ DWORD WINAPI cve::check_version(LPVOID param)
 				if (ver_latest[2] != 0)
 					str_latest += "." + std::to_string(ver_latest[2]);
 
-				str_notif = "アップデートが利用可能です。ダウンロードしますか？\nバージョン：" CVE_FILTER_VERSION " → v" + str_latest;
+				str_notif = "Update is available. Would you like to download it? \nVersion:" CVE_FILTER_VERSION " → v" + str_latest;
 				int responce = ::MessageBox(g_fp->hwnd, str_notif.c_str(), CVE_FILTER_NAME, MB_OKCANCEL | MB_ICONINFORMATION);
 				if (responce == IDOK) {
 					str_link = CVE_FILTER_LINK "/releases/latest";
