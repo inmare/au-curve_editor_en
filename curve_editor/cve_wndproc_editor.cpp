@@ -782,7 +782,7 @@ LRESULT CALLBACK wndproc_editor(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lpara
 		{
 			std::string info;
 			info = "ID :\t\t" + std::to_string(g_config.current_id.multi) + "\n"
-				+ "ポイント数 :\t" + std::to_string(g_curve_bezier_multi[g_config.current_id.multi - 1].ctpts.size);
+				+ "Point number :\t" + std::to_string(g_curve_bezier_multi[g_config.current_id.multi - 1].ctpts.size);
 			::MessageBox(
 				hwnd,
 				info.c_str(),
@@ -867,7 +867,7 @@ LRESULT CALLBACK wndproc_editor(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lpara
 #ifdef _DEBUG
 			::DialogBox(g_fp->dll_hinst, MAKEINTRESOURCE(IDD_SAVE), hwnd, ::dialogproc_save);
 #else
-			::MessageBox(hwnd, "プリセット機能は現在未実装です。完成までもうしばらくお待ちください。", CVE_FILTER_NAME, MB_ICONINFORMATION);
+			::MessageBox(hwnd, "Preset function is currently not implemented. Please wait for a while until it is completed.", CVE_FILTER_NAME, MB_ICONINFORMATION);
 #endif
 			return 0;
 			
