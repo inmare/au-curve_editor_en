@@ -669,7 +669,8 @@ LRESULT cve::Button_Category::wndproc(HWND hw, UINT msg, WPARAM wparam, LPARAM l
 
 		::SetTextColor(bitmap_buffer.hdc_memory, col_text.colorref());
 
-		draw_content(col_bg, &rect_wnd, "Бе Default(23)", false);
+		// Temporal change for test : original character was Бе
+		draw_content(col_bg, &rect_wnd, "\u25bc Default(23)", false);
 		bitmap_buffer.transfer();
 
 		return 0;
