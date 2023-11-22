@@ -139,7 +139,7 @@ LRESULT CALLBACK wndproc_menu(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 		id_back.init(
 			hwnd,
 			"CTRL_ID_BACK",
-			"前のIDのカーブに移動",
+			"Go to previous id curve",
 			cve::Button::Icon,
 			MAKEINTRESOURCE(IDI_BACK),
 			MAKEINTRESOURCE(IDI_BACK_LIGHT),
@@ -166,7 +166,7 @@ LRESULT CALLBACK wndproc_menu(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 		id_next.init(
 			hwnd,
 			"CTRL_ID_NEXT",
-			"次のIDのカーブに移動",
+			"Go to next id curve",
 			cve::Button::Icon,
 			MAKEINTRESOURCE(IDI_NEXT),
 			MAKEINTRESOURCE(IDI_NEXT_LIGHT),
@@ -180,7 +180,7 @@ LRESULT CALLBACK wndproc_menu(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 		copy.init(
 			hwnd,
 			"CTRL_COPY",
-			"カーブの数値/IDをコピー",
+			"Copy curve number/id",
 			cve::Button::Icon,
 			MAKEINTRESOURCE(IDI_COPY),
 			MAKEINTRESOURCE(IDI_COPY_LIGHT),
@@ -194,7 +194,7 @@ LRESULT CALLBACK wndproc_menu(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 		read.init(
 			hwnd,
 			"CTRL_READ",
-			"カーブの数値を読み取り",
+			"Read the curve value",
 			cve::Button::Icon,
 			MAKEINTRESOURCE(IDI_READ),
 			MAKEINTRESOURCE(IDI_READ_LIGHT),
@@ -208,7 +208,7 @@ LRESULT CALLBACK wndproc_menu(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 		save.init(
 			hwnd,
 			"CTRL_SAVE",
-			"カーブをプリセットとして保存",
+			"Save curve as preset",
 			cve::Button::Icon,
 			MAKEINTRESOURCE(IDI_SAVE),
 			MAKEINTRESOURCE(IDI_SAVE_LIGHT),
@@ -222,7 +222,7 @@ LRESULT CALLBACK wndproc_menu(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 		clear.init(
 			hwnd,
 			"CTRL_CLEAR",
-			"カーブを初期化",
+			"Initialize curve",
 			cve::Button::Icon,
 			MAKEINTRESOURCE(IDI_CLEAR),
 			MAKEINTRESOURCE(IDI_CLEAR_LIGHT),
@@ -236,7 +236,7 @@ LRESULT CALLBACK wndproc_menu(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 		fit.init(
 			hwnd,
 			"CTRL_FIT",
-			"グラフをフィット",
+			"Fit graph",
 			cve::Button::Icon,
 			MAKEINTRESOURCE(IDI_FIT),
 			MAKEINTRESOURCE(IDI_FIT_LIGHT),
