@@ -68,8 +68,8 @@ void load_configs(HWND hwnd, HWND* combo_theme)
 
 	*combo_theme = ::GetDlgItem(hwnd, IDC_THEME);
 	if (!::SendMessage(*combo_theme, CB_GETCOUNT, 0, 0)) {
-		::SendMessage(*combo_theme, CB_ADDSTRING, 0, (LPARAM)"ダーク");
-		::SendMessage(*combo_theme, CB_ADDSTRING, 0, (LPARAM)"ライト");
+		::SendMessage(*combo_theme, CB_ADDSTRING, 0, (LPARAM)"Dark");
+		::SendMessage(*combo_theme, CB_ADDSTRING, 0, (LPARAM)"Light");
 	}
 	::SendMessage(*combo_theme, CB_SETCURSEL, g_config.theme, 0);
 }
@@ -599,7 +599,7 @@ BOOL CALLBACK dialogproc_about(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam
 			10, 65,
 			300, 110
 		};
-		LPCTSTR version = "バージョン : " CVE_FILTER_VERSION "\n" "Developed by " CVE_FILTER_DEVELOPER;
+		LPCTSTR version = "Version : " CVE_FILTER_VERSION "\n" "Developed by " CVE_FILTER_DEVELOPER;
 
 		::SelectObject(hdc, font_title);
 		::SetBkMode(hdc, TRANSPARENT);
