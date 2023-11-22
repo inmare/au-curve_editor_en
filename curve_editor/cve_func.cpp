@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------
 //		Curve Editor
-//		ƒ\[ƒXƒtƒ@ƒCƒ‹ (‚»‚Ì‘¼‚ÌŠÖ”)
+//		ï¿½\ï¿½[ï¿½Xï¿½tï¿½@ï¿½Cï¿½ï¿½ (ï¿½ï¿½ï¿½Ì‘ï¿½ï¿½ÌŠÖï¿½)
 //		Visual C++ 2022
 //----------------------------------------------------------------------------------
 
@@ -9,7 +9,7 @@
 
 
 //---------------------------------------------------------------------
-//		DirectXƒIƒuƒWƒFƒNƒg‰Šú‰»
+//		DirectXï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //---------------------------------------------------------------------
 bool cve::dx_init()
 {
@@ -50,7 +50,7 @@ bool cve::dx_init()
 
 
 //---------------------------------------------------------------------
-//		DirectXƒIƒuƒWƒFƒNƒgŠJ•ú
+//		DirectXï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½Jï¿½ï¿½
 //---------------------------------------------------------------------
 template <class Interface>
 inline void dx_release(Interface** pp_interface)
@@ -72,7 +72,7 @@ void cve::dx_exit()
 
 
 //---------------------------------------------------------------------
-//		ƒNƒŠƒbƒvƒ{[ƒh‚ÉƒeƒLƒXƒg‚ğƒRƒs[
+//		ï¿½Nï¿½ï¿½ï¿½bï¿½vï¿½{ï¿½[ï¿½hï¿½Éƒeï¿½Lï¿½Xï¿½gï¿½ï¿½ï¿½Rï¿½sï¿½[
 //---------------------------------------------------------------------
 BOOL cve::copy_to_clipboard(HWND hwnd, LPCTSTR text)
 {
@@ -97,7 +97,7 @@ BOOL cve::copy_to_clipboard(HWND hwnd, LPCTSTR text)
 
 
 //---------------------------------------------------------------------
-//		’·‚³‚ğŒ¸Z
+//		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Z
 //---------------------------------------------------------------------
 void cve::subtract_length(aului::Point<float>* pt, const aului::Point<float>& st, const aului::Point<float>& ed, float length)
 {
@@ -125,7 +125,7 @@ void cve::subtract_length(aului::Point<float>* pt, const aului::Point<float>& st
 
 
 //---------------------------------------------------------------------
-//		g_config‚Ì“à—e‚ğƒ|ƒbƒvƒAƒbƒvƒƒjƒ…[‚É”½‰f‚³‚¹‚é
+//		g_configï¿½Ì“ï¿½ï¿½eï¿½ï¿½ï¿½|ï¿½bï¿½vï¿½Aï¿½bï¿½vï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[ï¿½É”ï¿½ï¿½fï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //---------------------------------------------------------------------
 void cve::apply_config_to_menu(HMENU menu, MENUITEMINFO* mi) {
 	mi->fMask = MIIM_STATE;
@@ -138,31 +138,31 @@ void cve::apply_config_to_menu(HMENU menu, MENUITEMINFO* mi) {
 		ID_MENU_MODE_BOUNCE
 	};
 
-	// •ÒWƒ‚[ƒh‚Ìƒ`ƒFƒbƒN
+	// ï¿½ÒWï¿½ï¿½ï¿½[ï¿½hï¿½Ìƒ`ï¿½Fï¿½bï¿½N
 	for (int i = 0; i < sizeof(edit_mode_menu_id) / sizeof(int); i++) {
 		mi->fState = g_config.edit_mode == i ? MFS_CHECKED : MFS_UNCHECKED;
 		SetMenuItemInfo(menu, edit_mode_menu_id[i], FALSE, mi);
 	}
 
-	// ƒŒƒCƒAƒEƒgƒ‚[ƒh
+	// ï¿½ï¿½ï¿½Cï¿½Aï¿½Eï¿½gï¿½ï¿½ï¿½[ï¿½h
 	mi->fState = g_config.layout_mode == cve::Config::Vertical ? MFS_CHECKED : MFS_UNCHECKED;
 	SetMenuItemInfo(menu, ID_MENU_VERTICAL, FALSE, mi);
 	mi->fState = g_config.layout_mode == cve::Config::Horizontal ? MFS_CHECKED : MFS_UNCHECKED;
 	SetMenuItemInfo(menu, ID_MENU_HORIZONTAL, FALSE, mi);
 
-	// “K—pƒ‚[ƒh
+	// ï¿½Kï¿½pï¿½ï¿½ï¿½[ï¿½h
 	mi->fState = g_config.apply_mode == cve::Config::Normal ? MFS_CHECKED : MFS_UNCHECKED;
 	SetMenuItemInfo(menu, ID_MENU_APPLY_NORMAL, FALSE, mi);
 	mi->fState = g_config.apply_mode == cve::Config::Ignore_Mid_Point ? MFS_CHECKED : MFS_UNCHECKED;
 	SetMenuItemInfo(menu, ID_MENU_APPLY_IGNOREMID, FALSE, mi);
 
-	//‚»‚Ì‘¼
+	//ï¿½ï¿½ï¿½Ì‘ï¿½
 	mi->fState = g_config.show_handle ? MFS_CHECKED : MFS_UNCHECKED;
 	SetMenuItemInfo(menu, ID_MENU_SHOWHANDLE, FALSE, mi);
 	mi->fState = g_config.align_handle ? MFS_CHECKED : MFS_UNCHECKED;
 	SetMenuItemInfo(menu, ID_MENU_ALIGNHANDLE, FALSE, mi);
 
-	// ƒ{ƒ^ƒ“‚ğ–³Œø‰»/—LŒø‰»
+	// ï¿½{ï¿½^ï¿½ï¿½ï¿½ğ–³Œï¿½ï¿½ï¿½/ï¿½Lï¿½ï¿½ï¿½ï¿½
 	switch (g_config.edit_mode) {
 	case cve::Mode_Bezier:
 		mi->fState |= MFS_DISABLED;
@@ -245,16 +245,16 @@ void cve::apply_config_to_menu(HMENU menu, MENUITEMINFO* mi) {
 		break;
 	}
 
-	//ƒvƒ‰ƒOƒCƒ“–¼‚Ì”½‰f
+	//ï¿½vï¿½ï¿½ï¿½Oï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½Ì”ï¿½ï¿½f
 	mi->fMask = MIIM_TYPE;
-	mi->dwTypeData = "About" CVE_FILTER_NAME;
+	mi->dwTypeData = "About " CVE_FILTER_NAME;
 	SetMenuItemInfo(menu, ID_MENU_ABOUT, FALSE, mi);
 }
 
 
 
 //---------------------------------------------------------------------
-//		ƒJ[ƒu‚ğXV
+//		ï¿½Jï¿½[ï¿½uï¿½ï¿½ï¿½Xï¿½V
 //---------------------------------------------------------------------
 void cve::trace_curve()
 {
@@ -284,7 +284,7 @@ void cve::trace_curve()
 
 
 //---------------------------------------------------------------------
-//		ƒL[‰Ÿ‰º‚Ìˆ—
+//		ï¿½Lï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
 //---------------------------------------------------------------------
 LRESULT cve::on_keydown(WPARAM wparam)
 {
@@ -351,7 +351,7 @@ void sort_presets(int mode)
 
 
 //---------------------------------------------------------------------
-//		URL‚ª—LŒø‚©‚Ç‚¤‚©‚ğ”»’è
+//		URLï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½ï¿½ğ”»’ï¿½
 //---------------------------------------------------------------------
 int is_url_valid(LPCSTR url)
 {
@@ -399,7 +399,7 @@ int is_url_valid(LPCSTR url)
 
 
 //---------------------------------------------------------------------
-//		ÅV‚Ìƒo[ƒWƒ‡ƒ“‚ğæ“¾
+//		ï¿½ÅVï¿½Ìƒoï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
 //---------------------------------------------------------------------
 bool get_latest_version(int (&result)[3])
 {
@@ -460,7 +460,7 @@ bool get_latest_version(int (&result)[3])
 
 
 //---------------------------------------------------------------------
-//		ƒo[ƒWƒ‡ƒ“‚ªÅV‚©‚Ç‚¤‚©‚ğ”»’è
+//		ï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÅVï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½ï¿½ğ”»’ï¿½
 //---------------------------------------------------------------------
 DWORD WINAPI cve::check_version(LPVOID param)
 {
@@ -472,7 +472,7 @@ DWORD WINAPI cve::check_version(LPVOID param)
 	};
 	std::string str_latest, str_notif, str_link;
 
-	// ÅVƒo[ƒWƒ‡ƒ“‚ğæ“¾
+	// ï¿½ÅVï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
 	if (get_latest_version(ver_latest)) {
 		for (int i = 0; i < 3; i++) {
 			if (ver_current[i] < ver_latest[i]) {
@@ -483,7 +483,7 @@ DWORD WINAPI cve::check_version(LPVOID param)
 				if (ver_latest[2] != 0)
 					str_latest += "." + std::to_string(ver_latest[2]);
 
-				str_notif = "Update is available. Would you like to download it? \nVersion:" CVE_FILTER_VERSION " ¨ v" + str_latest;
+				str_notif = "Update is available. Would you like to download it? \nVersion:" CVE_FILTER_VERSION " ï¿½ï¿½ v" + str_latest;
 				int responce = ::MessageBox(g_fp->hwnd, str_notif.c_str(), CVE_FILTER_NAME, MB_OKCANCEL | MB_ICONINFORMATION);
 				if (responce == IDOK) {
 					str_link = CVE_FILTER_LINK "/releases/latest";
@@ -500,7 +500,7 @@ DWORD WINAPI cve::check_version(LPVOID param)
 			::MessageBox(g_fp->hwnd, CVE_STR_INFO_LATEST_VERSION, CVE_FILTER_NAME, MB_OK | MB_ICONINFORMATION);
 		}
 	}
-	// ÅVƒo[ƒWƒ‡ƒ“‚Ìæ“¾‚É¸”s‚µ‚½ê‡
+	// ï¿½ÅVï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½Ìæ“¾ï¿½Éï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½ê‡
 	else if (param) {
 		::EndDialog((HWND)param, 1);
 		::MessageBox(g_fp->hwnd, CVE_STR_ERROR_CONNECTION_FAILED, CVE_FILTER_NAME, MB_OK | MB_ICONERROR);
