@@ -29,7 +29,7 @@ You can switch between the four modes using the mode selection button at the top
 - #### Bezier
     Identifies the Bezier curve with a 1-10 digit integer. The values ​​and curves correspond to each other.  
 
-- #### Bezier(Multiple midpoints) 
+- #### Bezier(Multi-points) 
     Up to 1024 Bezier curves can be saved in the project file using graph IDs from 1 to 1024.  
     
     In this mode, you can also create complex curves like 93's "Multi-bezier trajectory" script by adding control points.  
@@ -56,7 +56,7 @@ You can apply the edited curve to the track bar by dragging and dropping as show
 *By dragging and dropping while holding down the shift key, you can set easing individually for x, y, and z, even for track bars where easing is set at once for x, y, and z coordinates.
 
 #### If you can't drag and drop... 
-Select `Type1@Curve Editor` for Bezier/Bezier(Multiple midpoints) mode, and `Type2@Curve Editor` for Vibration/Bounce mode from the track bar menu.  
+Select `Type1@Curve Editor` for Bezier/Bezier(Multi-points) mode, and `Type2@Curve Editor` for Vibration/Bounce mode from the track bar menu.  
 In Bezier/Vibration/Bounce mode, you can use the curve value that can be copied by pressing the copy button on the top right, and in Bezier (vibration) mode, you can use it by entering the displayed ID into the parameter setting dialog.  
 
 ### Etc
