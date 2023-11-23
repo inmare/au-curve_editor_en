@@ -1,3 +1,13 @@
+# Note from translator
+
+**This is not my plugin! I just trasnlated it into English for AviUtl English version.**  
+**If you want to check original plugin, please visit [original repository](https://github.com/mimaraka/aviutl-plugin-curve_editor).**  
+ 
+Translation is in progress. Some parts of README.md and wiki are not translated yet.  
+ 
+한국어 번역도 현재 계획에 있습니다. 다만 플러그인 자체의 번역은 제 기술상 한계 때문에 어려울 것 같고, README.md와 wiki만 번역할 예정입니다.  
+다만 영문판과 동시에 번역을 진행하기 때문에 영문판이 우선시 된다는 점 양해 부탁드립니다.
+
 # Curve Editor for AviUtl
 
 ![GitHub](https://img.shields.io/github/license/mimaraka/aviutl-plugin-curve_editor)
@@ -8,9 +18,6 @@
 ![graph2 7](https://user-images.githubusercontent.com/106879397/215339739-e6b130bf-41a5-421a-8f8a-7dc2b12e647d.png)  
 
 This is an Aviutl plugin and script that allows you to edit various easings on the window. 
-
-**This is not my plugin! I just trasnlated it into English for AviUtl English version.**  
-**If you want to check original plugin, please visit [original repository](https://github.com/mimaraka/aviutl-plugin-curve_editor).**  
 
 ## Download
 Please download the latest version zip file (`curve_editor-v*.zip`) from the link below.  
