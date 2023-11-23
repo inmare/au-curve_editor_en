@@ -7,11 +7,14 @@
 
 ![graph2 7](https://user-images.githubusercontent.com/106879397/215339739-e6b130bf-41a5-421a-8f8a-7dc2b12e647d.png)  
 
-This is an Aviutl plugin and script that allows you to edit various easings on the window.  
+This is an Aviutl plugin and script that allows you to edit various easings on the window. 
+
+**This is not my plugin! I just trasnlated it into English for AviUtl English version.**  
+**If you want to check original plugin, please visit [original repository](https://github.com/mimaraka/aviutl-plugin-curve_editor).**  
 
 ## Download
 Please download the latest version zip file (`curve_editor-v*.zip`) from the link below.  
-[**Download**](https://github.com/mimaraka/aviutl-plugin-curve_editor/releases/latest)
+[**Download**](https://github.com/inmare/au-curve_editor_en/releases/latest)
 
 ## Installation 
 Unzip the downloaded `curve_editor-v*.zip`, put `curve_editor.auf` in the folder directly under the Aviutl directory or in the `Plugins` folder. 
