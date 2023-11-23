@@ -2,6 +2,9 @@
 
 **This is not my plugin! I just trasnlated it into English for AviUtl English version.**  
 **If you want to check original plugin, please visit [original repository](https://github.com/mimaraka/aviutl-plugin-curve_editor).**  
+
+**이 플러그인은 제가 만든게 아닙니다! 저는 AviUtl 영문판을 위해 이 플러그인을 영어로 번역한 것 뿐입니다.**
+**원본 플러그인을 확인하고 싶으시면 [원본 저장소](https://github.com/mimaraka/aviutl-plugin-curve_editor)를 방문해주세요.**
  
 Translation is in progress. Some parts of README.md and wiki are not translated yet.  
  
