@@ -366,3 +366,5 @@ FodyWeavers.xsd
 .idea
 Release
 curve_editor/Release
+make_release.ps1
+aviutl-plugin-curve_editor_en.zip
